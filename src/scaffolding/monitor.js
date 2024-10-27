@@ -50,12 +50,36 @@ class Monitor {
       }
     } else if (this.opcode === 'looks_size') {
       label = this.parent.getMessage('var-size');
+    } else if (this.opcode === 'looks_stretchGetX') {
+      label = this.parent.getMessage('var-stretch-x');
+    } else if (this.opcode === 'looks_stretchGetY') {
+      label = this.parent.getMessage('var-stretch-y');
+    } else if (this.opcode === 'looks_sayWidth') {
+      label = this.parent.getMessage('var-say-width');
+    } else if (this.opcode === 'looks_sayHeight') {
+      label = this.parent.getMessage('var-say-height');
+    } else if (this.opcode === 'looks_getEffectValue') {
+      const effect = this.params.EFFECT.toLowerCase();
+      label = this.parent.getMessage(`var-${effect}-effect`) || this.parent.getMessage("var-effect");
+    } else if (this.opcode === 'looks_tintColor') {
+      label = this.parent.getMessage('var-tint-color');
+    } else if (this.opcode === 'looks_getSpriteVisible') {
+      label = this.parent.getMessage('var-visible');
+    } else if (this.opcode === 'looks_layersGetLayer') {
+      label = this.parent.getMessage('var-layer');
+    } else if (this.opcode === 'looks_size') {
+      label = this.parent.getMessage('var-size');
+    } else if (this.opcode === 'sound_getEffectValue') {
+      const effect = this.params.EFFECT.toLowerCase();
+      label = this.parent.getMessage(`var-${effect}-sound-effect`) || this.parent.getMessage("var-sound-effect");
     } else if (this.opcode === 'control_get_counter') {
       label = this.parent.getMessage('var-get_counter');
     } else if (this.opcode === 'sensing_answer') {
       label = this.parent.getMessage('var-answer');
     } else if (this.opcode === 'sensing_mousedown') {
       label = this.parent.getMessage('var-mousedown');
+    } else if (this.opcode === 'sensing_mouseclicked') {
+      label = this.parent.getMessage('var-mouseclicked');
     } else if (this.opcode === 'sensing_mousex') {
       label = this.parent.getMessage('var-mousex');
     } else if (this.opcode === 'sensing_mousey') {
@@ -66,6 +90,12 @@ class Monitor {
       label = this.parent.getMessage('var-timer');
     } else if (this.opcode === 'sensing_dayssince2000') {
       label = this.parent.getMessage('var-dayssince2000');
+    } else if (this.opcode === 'sensing_getclipboard') {
+      label = this.parent.getMessage('var-getclipboard');
+    } else if (this.opcode === 'sensing_loud') {
+      label = this.parent.getMessage('var-loud');
+    } else if (this.opcode === 'sensing_loggedin') {
+      label = this.parent.getMessage('var-loggedin');
     } else if (this.opcode === 'sound_volume') {
       label = this.parent.getMessage('var-volume');
     } else if (this.opcode === 'sensing_current') {
