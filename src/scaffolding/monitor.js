@@ -92,6 +92,8 @@ class Monitor {
       label = this.parent.getMessage('var-dayssince2000');
     } else if (this.opcode === 'sensing_getclipboard') {
       label = this.parent.getMessage('var-getclipboard');
+    } else if (this.opcode === 'sensing_getdragmode') {
+      label = this.parent.getMessage('var-getdragmode');
     } else if (this.opcode === 'sensing_loud') {
       label = this.parent.getMessage('var-loud');
     } else if (this.opcode === 'sensing_loggedin') {
