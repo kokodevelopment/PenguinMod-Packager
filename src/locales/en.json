@@ -34,7 +34,7 @@
       "context": "Error displayed when the packager detects that you are using an old version and that you must refresh to continue."
     },
     "cannotAccessProject": {
-      "string": "Can't access the project. This usually means the project never existed, the ID is invalid, or your network is blocking projects.penguinmod.com.",
+      "string": "Can't access the project. This usually means the project never existed, the ID is invalid, or your network is blocking pmprojects.kokodev.cc.",
       "context": "Part of the error modal when loading an unshared project."
     },
     "cannotAccessProjectCaching": {
@@ -119,11 +119,11 @@
       "string": "Select Project"
     },
     "selectHelp": {
-      "string": "Select the project you want to package by copying and pasting the PenguinMod project link or using one of the other modes. If you use a project you didn't make, make sure to credit the creator."
+      "string": "Select the project you want to package by copying and pasting the OrangeMod project link or using one of the other modes. If you use a project you didn't make, make sure to credit the creator."
     },
     "id": {
-      "string": "PenguinMod Project ID or URL",
-      "context": "Radio option to select a project from the PenguinMod website"
+      "string": "OrangeMod Project ID or URL",
+      "context": "Radio option to select a project from the OrangeMod website"
     },
     "file": {
       "string": "File",
@@ -131,7 +131,7 @@
     },
     "url": {
       "string": "Other URL",
-      "context": "Radio option to choose a project from a non-PenguinMod URL"
+      "context": "Radio option to choose a project from a non-OrangeMod URL"
     },
     "loadProject": {
       "string": "Load Project",
