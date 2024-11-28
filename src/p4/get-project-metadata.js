@@ -6,8 +6,8 @@ const getProjectMetadata = async (id) => {
     const meta = await request({
       url: [
         // Hopefully one of these URLs won't be blocked.
-        `https://pmprojects.kokodev.cc/api/v1/projects/getproject?id=${id}&requestType=metadata`,
-        `https://pmprojects.kokodev.cc/api/v1/projects/getproject?id=${id}&requestType=metadata`
+        `https://pmprojects.kokodev.cc/api/v1/projects/getproject?projectID=${id}&requestType=metadata`,
+        `https://pmprojects.kokodev.cc/api/v1/projects/getproject?projectID=${id}&requestType=metadata`
       ],
       type: 'json'
     });
